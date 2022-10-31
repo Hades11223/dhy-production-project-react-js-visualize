@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@src/*":  ["./src/*"],
+            "@resources/*":["./src/resources/*"],
+            "@images/*":["./src/resources/images/*"],
+            "@strings/*":["./src/resources/strings/*"],
+            "@data-access/*":["./src/data-access/*"],
+            "@utils/*":["./src/utils/*"],
+            "@redux-store/*":["./src/redux-store/*"],
+            "@actions/*":["./src/redux-store/actions/*"],
+            "@user/*":["./src/site/user/*"],
+            "@admin/*":["./src/site/admin/*"],
+            "@styles/*":["./src/styles/*"],
+            "@routes/*":["./src/routes/*"],
+            "@components/*":["./src/components/*"]
+        }
+    },
+    "include": ["src"]
+}

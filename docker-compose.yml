@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  isofh_frontend:
+    container_name: visualize_nextjs_web_develop
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '/node_modules'
+      - /mnt/apps/visualize_nextjs_web_develop/files:/usr/src/app/uploads-file
+      - /mnt/data/visualize_nextjs_web_develop/uploads-image:/usr/src/app/uploads-image
+
+    ports:
+      - '9460:3000'
+    environment:
+      - NODE_ENV=production

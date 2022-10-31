@@ -1,0 +1,132 @@
+.patientTicket {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    // border: 1px solid black;
+    min-height: 378px;
+
+    .nameRoom {
+        background-color: #28509d;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.625rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    .titlePatient {
+        background-color: #ea1c1c;
+        color: white;
+        // border-radius: 0.5rem;
+        font-size: 1.25rem;
+        margin: 0.5rem 0;
+    }
+    .numCount {
+        font-size: 5rem;
+        font-weight: 800;
+        color: #ea1c1c;
+        // height: 7rem;
+    }
+    .namePatient {
+        color: #28509d;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .agePatient {
+        color: #28509d;
+        font-weight: 600;
+    }
+}
+
+.patientTicketBig {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    max-width: 80rem;
+    margin: 0 auto;
+
+    .nameRoom {
+        background-color: #28509d;
+        color: white;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        border-radius: 0.5rem;
+    }
+    .titlePatient {
+        font-size: 1.5rem;
+        background-color: #ea1c1c;
+        color: white;
+        // border-radius: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .numCount {
+        flex: 1;
+        font-size: 7rem;
+        font-weight: 800;
+        color: #ea1c1c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .namePatient {
+        color: #28509d;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .agePatient {
+        color: #28509d;
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+    // @keyframes move {
+    //     0%,
+    //     25% {
+    //         transform: translateX(0%);
+    //         left: 100%;
+    //     }
+    //     75%,
+    //     100% {
+    //         transform: translateX(-100%);
+    //         left: 0%;
+    //     }
+    // }
+}
+
+@media only screen and (min-width: 1600px) {
+    .patientTicket {
+        .nameRoom {
+            font-size: 2.25rem;
+        }
+        .titlePatient {
+            background-color: #ea1c1c;
+            color: white;
+            font-size: 1.625rem;
+            margin: 1rem 0;
+        }
+        .numCount {
+            // font-size: 6.5rem;
+        }
+        .namePatient {
+            color: #28509d;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .agePatient {
+            color: #28509d;
+            font-weight: 600;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1760px) {
+    .patientTicket {
+        .numCount {
+            font-size: 6.5rem;
+        }
+    }
+}

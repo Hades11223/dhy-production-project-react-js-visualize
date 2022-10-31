@@ -1,0 +1,97 @@
+.visualize {
+  min-height: 100vh;
+  font-size: calc(14px + (28 - 14) * ((100vw - 768px) / (1700 - 768))) !important;
+  line-height: calc(1.1em + (1.5 - 1.2) * ((100vw - 768px) / (1700 - 768))) !important;
+  background: #E3EDF7;
+  padding: 0 10px;
+  .body-wrapper {
+    .header {
+      min-height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding-bottom: 15px;
+      .title {
+        font-weight: 900;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        color: #262262;
+        margin: 0;
+        font-size: 29.319px;
+       
+      }
+      > img {
+        margin-right: 0.5rem;
+      }
+      .counter-info {
+        text-align: center;
+        margin-top: 9px;
+        > .counter-wrapper {
+          background: #e3edf7;
+          box-shadow: inset -4px -4px 4px rgba(248, 251, 255, 0.75), inset 4px 4px 4px rgba(196, 217, 238, 0.75);
+          border-radius: 16px;
+          display: inline-flex;
+          align-items: center;
+          width: auto;
+          > img {
+            margin: 8px 8px 8px 12px;
+          }
+          > label {
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            align-items: center;
+            text-align: center;
+            color: #006838;
+            margin: 0;
+            margin-right: 12px;
+          }
+        }
+      }
+      .logo {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+        display: flex;
+        img {
+          cursor: pointer;
+          object-fit: contain;
+        }
+        .text {
+          padding: 15px;
+          text-align: center;
+          color: #262262;
+          text-transform: uppercase;
+          font-size: 20px;
+          .hospital {
+            font-size: 33px;
+            font-weight: 700;
+          }
+        }
+      }
+      .logo-isofh {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+    .content {
+      border-radius: 30px 30px 0px 0px;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      .item {
+        padding: 5px;
+      }
+    }
+  }
+}

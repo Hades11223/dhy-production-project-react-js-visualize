@@ -1,0 +1,172 @@
+.visualize-list-waiting {
+  
+  font-size: calc(14px + (28 - 14) * ((100vw - 768px) / (1700 - 768))) !important;
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 768px) / (1700 - 768))) !important;
+  background: #e3edf7;
+  padding: 0 10px;
+  .body-wrapper {
+    .header {
+      min-height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding-bottom: 20px;
+      h1 {
+        font-weight: 900;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        color: #262262;
+        padding-top: 24px;
+        margin: 0;
+        > img {
+          margin-right: 0.5rem;
+        }
+      }
+      .counter-info {
+        text-align: center;
+        margin-top: 9px;
+        > .counter-wrapper {
+          background: #e3edf7;
+          box-shadow: inset -4px -4px 4px rgba(248, 251, 255, 0.75), inset 4px 4px 4px rgba(196, 217, 238, 0.75);
+          border-radius: 16px;
+          display: inline-flex;
+          align-items: center;
+          width: auto;
+          > img {
+            margin: 8px 8px 8px 12px;
+          }
+          > label {
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            align-items: center;
+            text-align: center;
+            color: #006838;
+            margin: 0;
+            margin-right: 12px;
+          }
+        }
+      }
+      .logo {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 30px;
+      }
+      .logo-isofh {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        img {
+          max-width: 150px;
+        }
+      }
+    }
+    .content {
+      padding: 0 20px;
+      .shop {
+        margin: 5px;
+        color: #333333;
+        background: #006838;
+        box-shadow: -4px -4px 4px #f8fbff, 4px 4px 4px #c4d9ee;
+        border-radius: 20px;
+        .shop-header {
+          padding: 15px;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        .shop-content {
+          background-color: #fff;
+          border-radius: 20px;
+          .working {
+            padding: 5px 10px;
+            display: flex;
+            .stt {
+              border-right: 1px solid #c4c4c4;
+              flex-basis: 30%;
+              font-weight: bold;
+              color: #006838;
+              text-align: center;
+              .status {
+                text-transform: uppercase;
+                margin-bottom: 0;
+                font-size: 0.6em;
+              }
+              .number {
+                margin-bottom: 0;
+              }
+            }
+            .info {
+              flex-basis: 70%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 0 5px;
+              .name {
+                display: flex;
+                align-items: center;
+                .text {
+                  padding: 4px;
+                  text-transform: capitalize;
+                  font-weight: 800;
+                }
+              }
+              .age {
+                margin: 0 20px;
+              }
+            }
+          }
+          .waiting {
+            background: #ef4123;
+            border-radius: 20px 0px 0px 0px;
+            .status {
+              padding: 10px 12px;
+              font-weight: bold;
+              color: #fff;
+              text-transform: uppercase;
+              display: flex;
+              justify-content: space-between;
+            }
+            .list-waiting {
+              background: #e3edf7;
+              border-radius: 20px 0px 0px 0px;
+              padding: 5px;
+              .patient {
+                margin: 20px auto;
+                display: flex;
+                .stt {
+                  flex-basis: 15%;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 10px;
+                  justify-content: center;
+                  border: 1px solid #e93234;
+                  border-radius: 21px;
+                  color: #e93234;
+                  font-weight: bold;
+                }
+                .name {
+                  flex-basis: 75%;
+                  font-weight: 900;
+                }
+                .age {
+                  flex-basis: 10%;
+                  display: flex;
+                  align-items: center;
+                  margin: 0 20px;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

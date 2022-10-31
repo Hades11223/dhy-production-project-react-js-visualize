@@ -1,0 +1,130 @@
+.patient-wait {
+  font-size: calc(14px + (28 - 14) * ((100vw - 768px) / (1700 - 768))) !important;
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 768px) / (1700 - 768))) !important;
+  .title-tivi {
+    margin-left: 10px;
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3160ac;
+  }
+  .item-bn {
+    min-height: 1000px;
+  }
+
+  span.logo-isoft {
+    margin-right: 40px;
+  }
+
+  .head-tivi {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .text-footer-tivi {
+    height: 95px;
+    line-height: 100px;
+  }
+
+  .item-bn:nth-child(2n) {
+    background-color: #ededed;
+    border: 4px solid #3160aa;
+    border-top: 0;
+  }
+
+  .light-note {
+    font-size: 44px;
+    color: #898989;
+    margin-top: 5px !important;
+    line-height: 44px;
+  }
+  .text-ut {
+    color: #898989;
+  }
+  .text-number {
+    font-size: 160pt !important;
+    line-height: 160px !important;
+  }
+  .content-item {
+    padding: 15px;
+    text-align: center;
+    .number {
+      font-size: 9.5em;
+      padding: 0.5em;
+      margin-bottom: 0;
+      color: red;
+      font-weight: 700;
+    }
+    .name {
+      font-size: 2.5em;
+      margin: 0.5em auto;
+      font-weight: 700;
+      line-height: 1.1em;
+    }
+    .age {
+      font-size: 2em;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+  }
+  .text-bod {
+    font-size: 30pt;
+    line-height: 30px;
+  }
+  .head-item {
+    background-image: url("/images/group.png");
+    background-size: 100% 100%;
+    background-position: top;
+    height: 214px;
+    padding-top: 33px;
+    text-align: center;
+  }
+
+  .head-item .title-big {
+    font-size: 48px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    min-height: 57px;
+    color: #fff;
+  }
+  .head-item .small-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  #item-patients {
+    display: flex;
+    flex: 1;
+  }
+
+  #item-patients .patient-item {
+    flex: 1;
+    border-right: 4px solid #3160aa;
+  }
+
+  .border-right-none {
+    border-right: none !important;
+  }
+  .head-tivi {
+    display: flex;
+    align-items: center;
+  }
+  .logo > img {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+  }
+  .logo-isoft {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content-tivi {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,89 @@
+.wrapper-auto-generate-link {
+  font-size: 1rem;
+  padding: 30px;
+  .header {
+    .logo-customer {
+      display: flex;
+      align-items: center;
+      img {
+        width: 100px;
+      }
+    }
+    .title-panel {
+      h2 {
+        text-align: center;
+        margin-bottom: 0;
+        padding: 20px;
+        color: #1d93d1;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+    .logo-company {
+      display: flex;
+      justify-content: flex-end;
+      img {
+        width: 180px;
+        padding: 16px 0;
+      }
+    }
+  }
+  .content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    .generate-call-room {
+      .title-generate-room {
+        padding: 5px 0;
+        text-transform: capitalize;
+      }
+      .create-form {
+        .field {
+          padding: 5px;
+          .label {
+            text-transform: capitalize;
+            padding: 5px 0;
+          }
+          &.timer {
+            .custom-input-number {
+              width: 80%;
+            }
+          }
+        }
+        .visible-hidden {
+          visibility: hidden;
+        }
+        .action-btn {
+          padding: 15px 0;
+        }
+        .generated-link {
+          margin: 15px 0;
+        }
+      }
+    }
+
+    .generate-visualize-room {
+      .title-generate-room {
+        padding: 5px 0;
+        text-transform: capitalize;
+      }
+      .create-form {
+        .field {
+          .label {
+            text-transform: capitalize;
+            padding: 5px 0;
+          }
+        }
+        .visible-hidden {
+          visibility: hidden;
+        }
+        .action-btn {
+          padding: 15px 0;
+        }
+        .generated-link {
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+}

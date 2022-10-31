@@ -1,0 +1,69 @@
+.visualizeCls {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+    .header {
+        height: 10vh;
+        .logo-customer {
+            display: flex;
+            align-items: center;
+            img {
+                width: 100px;
+            }
+        }
+        .title-panel {
+            h2 {
+                text-align: center;
+                margin-bottom: 0;
+                padding: 20px;
+                color: #1d93d1;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .logo-company {
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 180px;
+                padding: 1rem 0;
+            }
+        }
+    }
+    .visualizeCls_list {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .colBig {
+        }
+        .col {
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+  .visualizeCls {
+      .header {
+        .title-panel {
+            h2 {
+                padding: 20px;
+                color: #1d93d1;
+                font-weight: 700;
+                font-size: 2.75rem;
+            }
+        }
+    }
+      .visualizeCls_list {
+          padding: 1rem 0;
+      }
+  }
+}
+
+// 1366 * 768
+// 1440 * 900
+// 1600 * 900
+// 1920 * 1080

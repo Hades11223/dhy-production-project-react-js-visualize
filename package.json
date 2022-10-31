@@ -13,6 +13,7 @@
     "@material-ui/icons": "^3.0.1",
     "@material-ui/styles": "^4.3.3",
     "axios": "^0.18.0",
+    "antd": "^4.16.13",
     "bootstrap": "^4.3.1",
     "ckeditor4-react": "^1.0.0-beta",
     "crypto-js": "^3.1.9-1",

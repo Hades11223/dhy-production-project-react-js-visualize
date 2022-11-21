@@ -32,7 +32,7 @@ spec:
       volumes:
       - name: dhy-production-project-react-js-visualize-2
         nfs:
-          path: /mnt/NFS_Share/dhy-production-project-react-js-visualize/app
+          path: /mnt/NFS_Share/dhy-production-project-react-js-visualize-2/app
           server: 10.0.0.18
   
 ------------------------

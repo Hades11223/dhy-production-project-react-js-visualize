@@ -44,7 +44,7 @@ metadata:
   namespace: dhy-production-project-react-js-visualize
 spec:
   selector:
-    app: dhy-production-project-react-js-visualize
+    app: dhy-production-project-react-js-visualize-2
   type: NodePort
   ports:
   - protocol: TCP

@@ -1,36 +1,36 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dhy-production-project-react-js-visualize
+  name: dhy-production-project-react-js-visualize-2
   namespace: dhy-production-project-react-js-visualize
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: dhy-production-project-react-js-visualize
+      app: dhy-production-project-react-js-visualize-2
   template:
     metadata:
       labels:
-        app: dhy-production-project-react-js-visualize
+        app: dhy-production-project-react-js-visualize-2
     spec:
       containers:
       - image: mainamctk33/reactjs:1.0
         imagePullPolicy: Always
-        name: dhy-production-project-react-js-visualize
+        name: dhy-production-project-react-js-visualize-2
         ports:
         - containerPort: 80
-          name: 80tcp32000
+          name: 80tcp32001
           protocol: TCP
         volumeMounts:
         - mountPath: /usr/share/nginx/html
-          name: dhy-production-project-react-js-visualize
+          name: dhy-production-project-react-js-visualize-2
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
       volumes:
-      - name: dhy-production-project-react-js-visualize
+      - name: dhy-production-project-react-js-visualize-2
         nfs:
           path: /mnt/NFS_Share/dhy-production-project-react-js-visualize/app
           server: 10.0.0.18
@@ -40,14 +40,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: dhy-production-project-react-js-visualize
+  name: dhy-production-project-react-js-visualize-2
   namespace: dhy-production-project-react-js-visualize
 spec:
   selector:
     app: dhy-production-project-react-js-visualize
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
-    nodePort: 32000
+    nodePort: 32001

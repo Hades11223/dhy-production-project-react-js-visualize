@@ -18,7 +18,7 @@ pipeline {
 
     stage('Build'){
       steps{
-        sh 'cd /var/lib/jenkins/workspace/dhy-production-project-react-js-visualize'
+        sh 'cd /var/lib/jenkins/jobs/dhy-production-project-react-js-visualize/workspace'
         sh 'npm install'
         sh 'yarn install --ignore-engines'
         sh 'yarn build'

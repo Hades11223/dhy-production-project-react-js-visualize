@@ -22,7 +22,7 @@ pipeline {
         sh 'npm install'
         sh 'yarn install --ignore-engines'
         sh 'yarn build'
-        sh 'sudo scp -r build/* /mnt/NFS_Share/dhy-production-project-react-js-visualize/app'
+        sh 'sudo scp -r build/* /mnt/NFS_Share/dhy-production-project-react-js-visualize-2/app'
       }
     }
     
